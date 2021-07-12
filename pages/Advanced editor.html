@@ -46,43 +46,31 @@
             </a>
           </li>
           <li class="active ">
-            <a href="../pages/Advanced editor.html" onclick="confirmbut1()">
+            <a href="#" onclick="confirmbut2()">
               <i class="tim-icons icon-atom"></i>
               <p>Compiler (Advanced)</p>
             </a>
           </li>
           <li>
-            <a href="https://t.me/runthecodebot" onclick="confirmbut2()">
+            <a href="" onclick="confirmbut1()">
               <i class="tim-icons icon-pin"></i>
               <p>Telegram Bot</p>
             </a>
           </li>
           <li>
-            <a href="https://t.me/runthecodebot" onclick="confirmbut2()">
-              <i class="tim-icons icon-pin"></i>
-              <p>Telegram Bot</p>
-            </a>
-          </li>
-          <li>
-            <a href="./user.html">
-              <i class="tim-icons icon-single-02"></i>
-              <p>Request Support</p>
-            </a>
-          </li>
-          <li>
-            <a href="./tables.html">
+            <a href="https://github.com/srj7/Bsql">
               <i class="tim-icons icon-puzzle-10"></i>
               <p>Source Code</p>
             </a>
           </li>
           <li>
-            <a href="https://z-lib.org/" target="_blank" onclick="confirmbut()">
+            <a href="#" onclick="confirmbut()">
               <i class="tim-icons icon-align-center"></i>
               <p>Ebooks (External)</p>
             </a>
           </li>
           <li>
-            <a href="./rtl.html">
+            <a href="./About.html">
               <i class="tim-icons icon-world"></i>
               <p>About</p>
             </a>
@@ -408,22 +396,30 @@
      <!-- Confirm to leave -->
 
      <script>
-      function confirmbut() {
-        alert("The Ebook library is an external service. We are not responsible for the content or any changes there.");
-      }
-      </script>
-
+      function confirmbut2(){
+        if(confirm("The advanced version works like a fully featured code editor and is not optimised for mobile devices and slower networks. Are you sure want to continue?")){
+          window.open("../pages/Advanced editor.html");
+          }
+        return;
+     }
+     </script>
      <script>
-        function confirmbut1() {
-         alert("The advanced version works like a fully featured code editor and is not optimised for mobile devices and slower networks. Are you sure want to continue?");
-      }
-      </script>
+      function confirmbut1(){
+        if(confirm("You need to have telegram app installed to make the bot work. Are you sure want to continue?")){
+          window.open("https://t.me/bsqlbot");
+          }
+        return;
+     }
+     </script>
             
-     <script>
-      function confirmbut2() {
-       alert("You need to have telegram app installed to make the bot work. Are you sure want to continue?");
-    }
-    </script>
+         <script>
+    function confirmbut(){
+      if(confirm("The Ebook library is an external service. We are not responsible for the content or any changes there.")){
+        window.open("https://z-lib.org/");
+        }
+      return;
+   }
+   </script>
 </body>
 
 </html>
